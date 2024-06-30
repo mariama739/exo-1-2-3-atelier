@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=
+    , initial-scale=1.0">
+    <title>Types de donnees en JavaScript</title>
+</head>
+<body>
+    <p>Déclarez un tableau de 10 étudiants dont un étudiant a ces informations : Prénom - Nom - Âge - Note</p>
+    <p> Afficher le tableau dans la console et sur la plage HTML (pour la page HTML le tableau s’affiche avec des bordures ayant les informations des 10 étudiants).</p>
+    <p>En utilisant switch-case comparez les variables et affichez sur chaque ligne l’entier, la chaîne de caractère et le décimal par alerte.</p>
+
+    <style>
+        /* table {
+            border-collapse: collapse;
+            width: 100%;
+        }
+        th, td {
+            border: 1px solid black;
+            padding: 8px;
+            text-align: left;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+    </style>
+
+    <h2>Tableau des étudiants</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>Prénom</th>
+                <th>Nom</th>
+                <th>Âge</th>
+                <th>Note</th>
+            </tr>
+        </thead>
+        <tbody id="table-body">
+            <!-- Contenu de la table généré dynamiquement -->
+        </tbody>
+    </table>
+
+    <script>
+        // Tableau d'étudiants
+        let etudiants = [
+            { prenom: "Mariama", nom: "Coly", age: 24, note: 15 },
+            { prenom: "sindy", nom: "sira", age: 22, note: 14 },
+            { prenom: "ndeye", nom: "ngone", age: 21, note: 16 },
+            { prenom: "Mouhamed", nom: "geuye", age: 19, note: 15 },
+            { prenom: "fallou", nom: "Wade", age: 20, note: 17 },
+            { prenom: "Abdoulaye", nom: "Geuye", age: 21, note: 15 },
+            { prenom: "Madadou saliou", nom: "Diallo", age: 22, note: 18 },
+            { prenom: "Abdourakhmane", nom: "Souwalihi", age: 19, note: 15 },
+            { prenom: "kalika", nom: "Ba", age: 20, note: 14 },
+            { prenom: "Mahmoud", nom: "Barry", age: 21, note: 16 }
+        ];
+
+        // Récupération de l'élément tbody où insérer les données
+        let tbody = document.getElementById("table-body");
+
+        // Génération du contenu HTML pour chaque étudiant
+        etudiants.forEach(etudiant => {
+            let row = document.createElement("tr");
+            row.innerHTML = `
+                <td>${etudiant.prenom}</td>
+                <td>${etudiant.nom}</td>
+                <td>${etudiant.age}</td>
+                <td>${etudiant.note}</td>
+            `;
+            tbody.appendChild(row);
+        });
+    </script> */
+
+    <script src="script.js"></script>
+</body>
+</html>
